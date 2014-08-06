@@ -6,4 +6,4 @@
   	|_| /_/  \__|_| |_|_|  |_|\_____|\____(_)___\___/|_| |_| |_|
 
 
-		Developed for the 19thMCU.com by Locknlol and Double.
+	   Developed for the 19thMCU.com by Locknlol and Double.
