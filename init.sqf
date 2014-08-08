@@ -11,8 +11,6 @@ null = [vicspawner, -1, west, "FULL"] execVM 'R3F_LOG\USER_FUNCT\init_creation_f
 
 
 0 = [] execVM 'scripts\group_manager.sqf';
-[] execVM "zlt_fieldrepair.sqf";
-[] execVM "zlt_fastrope.sqf";
 [] execVM "module_cleanup\init.sqf";
 
 ["Vehicle_Scrap",
