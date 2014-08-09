@@ -57,7 +57,8 @@ class Mission
 		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Static_F_Gamma",
 		"camisc_e",
-		"A3_Armor_F_EPC_MBT_01"
+		"A3_Armor_F_EPC_MBT_01",
+		"MicroAirVehicles"
 	};
 	addOnsAuto[]=
 	{
@@ -115,6 +116,7 @@ class Mission
 		"sti_weap_launchers_a3",
 		"sti_weap_machineguns_a3",
 		"A3_Structures_F_Mil_Flags",
+		"MicroAirVehicles",
 		"camisc_e"
 	};
 	randomSeed=10139576;
@@ -6114,7 +6116,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo40_military_green_F";
 			skill=0.60000002;
-			init="this setVectorUp [0,0,1]; this allowDamage false; this enableSimulation false;";
+			init="this setVectorUp [0,0,1]; this allowDamage false; this enableSimulation false; nul = [this] execVM  ""R3F_LOG  \  USER_FUNCT  \  init_creation_factory.sqf"";";
 		};
 		class Item161
 		{
@@ -7963,13 +7965,13 @@ class Mission
 		class Item332
 		{
 			position[]={8206.0273,296.04001,2066.5325};
-			azimut=-122.49139;
+			azimut=-122.491;
 			offsetY=-5;
 			id=464;
 			side="EMPTY";
-			vehicle="Land_LampStreet_small_F";
+			vehicle="rq11_zerlegt";
 			skill=0.60000002;
-			init="this setVectorUp [0,0,1];this setPos [getPos this select 0, getPos this select 1,-3];this allowdamage false;";
+			init="this setVectorUp [0,0,1];this setPos [getPos this select 0, getPos this select 1,-3];this allowdamage false; this addAction['SkipTime', {[""19Scripts\skip3.sqf"",""BIS_fnc_execVM"",true,true ] call BIS_fnc_MP;}];";
 		};
 		class Item333
 		{
