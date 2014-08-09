@@ -3,16 +3,13 @@ waituntil {(player getvariable ["alive_sys_player_playerloaded",false])};
 
 enableSaving [false, false];
 
-null = [WEST, true] execVM "scripts\jsere_Redress.sqf";
-null = [] execVM "scripts\IgiLoad\IgiLoadInit.sqf";
+null = [] execVM "IgiLoad\IgiLoadInit.sqf";
 [] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
 null = [] execVM 'R3F_LOG\init.sqf';
 null = [vicspawner, -1, west, "FULL"] execVM 'R3F_LOG\USER_FUNCT\init_creation_factory.sqf';
 
 
 0 = [] execVM 'scripts\group_manager.sqf';
-[] execVM "zlt_fieldrepair.sqf";
-[] execVM "zlt_fastrope.sqf";
 [] execVM "module_cleanup\init.sqf";
 
 ["Vehicle_Scrap",
